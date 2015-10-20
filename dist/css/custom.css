@@ -1,0 +1,32 @@
+
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #203731;
+    background-color: #FFB612;
+}
+
+.nav-pills>li{float:left}
+.nav-pills>li>a{border-radius:4px}
+.nav-pills>li+li{margin-left:2px}
+.nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover
+{color:#203731;background-color:#ffb612;
+}
+
+a {
+    color: #203731;
+    background-color: #FFB612;
+    text-decoration: none;
+}
+a:hover{
+color: #000;
+    background-color: #FFB612;
+    text-decoration: none;
+
+}
+
+.cwc-text{
+color: #203731;
+background:#ddd;
+
+
+}
