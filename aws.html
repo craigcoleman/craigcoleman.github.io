@@ -1,0 +1,191 @@
+<pre>
+gentoo 
+2 cpu
+4 gb ram
+
+52.33.65.15
+
+code for update
+#emerge --sync;emerge -uDNavt @world;
+
+Calculating dependencies... done!
+[nomerge       ] virtual/ssh-0::gentoo  USE="-minimal" 
+[ebuild     U  ]  net-misc/openssh-7.1_p1-r2::gentoo [6.7_p1::gentoo] USE="hpn pam pie ssl%* -X -X509 -bindist -debug% -kerberos -ldap -ldns -libedit 
+(-libressl) -sctp (-selinux) -skey -ssh1% -static" 1,487 KiB
+[nomerge       ] sys-apps/iproute2-3.19.0::gentoo  USE="berkdb iptables ipv6 -atm -minimal (-selinux)" 
+[ebuild   R    ]  net-firewall/iptables-1.4.21-r1::gentoo  USE="ipv6 -conntrack% -netlink -static-libs" 535 KiB
+[ebuild   R    ] app-portage/gentoolkit-0.3.0.9-r2::gentoo  PYTHON_TARGETS="python2_7 python3_4* (-pypy) -python3_3*" 3,120 KiB
+[ebuild     U  ] app-admin/syslog-ng-3.7.1::gentoo [3.6.2::gentoo] USE="ipv6 tcpd -amqp -caps -dbi -geoip -json -mongodb -pacct -python% -redis -smtp 
+-spoof-source -systemd (-ssl%*)" 3,428 KiB
+[ebuild     U  ] sys-fs/lvm2-2.02.116::gentoo [2.02.109::gentoo] USE="readline thin udev (-clvm) (-cman) -device-mapper-only -lvm1 -lvm2create_initrd 
+(-selinux) -static -static-libs -systemd" 1,503 KiB
+[ebuild     U  ] dev-vcs/git-2.4.10::gentoo [2.3.6::gentoo] USE="blksha1 curl gpg iconv nls pcre perl python threads webdav -cgi -cvs -doc -emacs 
+-gnome-keyring -gtk -highlight -mediawiki (-ppcsha1) -subversion {-test} -tk -xinetd" PYTHON_TARGETS="python2_7" 3,974 KiB
+[ebuild     U  ] net-misc/wget-1.16.3-r1::gentoo [1.16::gentoo] USE="ipv6 nls pcre ssl zlib -debug -gnutls -idn -ntlm -static {-test} -uuid" 1,753 KiB
+[ebuild     U  ] sys-process/procps-3.3.10-r1::gentoo [3.3.9-r2::gentoo] USE="ncurses nls unicode -modern-top% (-selinux) -static-libs -systemd 
+{-test}" 642 KiB
+[ebuild     U  ] sys-fs/e2fsprogs-1.42.13::gentoo [1.42.12::gentoo] USE="nls -static-libs" 6,360 KiB
+[nomerge       ] virtual/man-0-r1::gentoo 
+[ebuild     U  ]  sys-apps/man-db-2.7.2::gentoo [2.6.6::gentoo] USE="berkdb gdbm nls zlib (-selinux) -static-libs" 1,467 KiB
+[nomerge       ] app-portage/gentoolkit-0.3.0.9-r2::gentoo  PYTHON_TARGETS="python2_7 python3_4* (-pypy) -python3_3*" 
+[ebuild     U  ]  sys-apps/portage-2.2.20.1::gentoo [2.2.18::gentoo] USE="(ipc) xattr* -build -doc -epydoc (-selinux)" LINGUAS="-ru" 
+PYTHON_TARGETS="python2_7 python3_4* (-pypy) -python3_3*" 929 KiB
+[ebuild  N     ]   dev-python/pyxattr-0.5.3::gentoo  USE="-doc {-test}" PYTHON_TARGETS="python2_7 python3_4 (-pypy) -python3_3" 26 KiB
+[nomerge       ] dev-python/pyxattr-0.5.3::gentoo  USE="-doc {-test}" PYTHON_TARGETS="python2_7 python3_4 (-pypy) -python3_3" 
+[nomerge       ]  dev-python/setuptools-18.4::gentoo  USE="{-test}" PYTHON_TARGETS="python2_7 python3_4 (-pypy) (-pypy3) -python3_3 (-python3_5)" 
+[ebuild  N     ]   dev-python/certifi-2015.9.6.2::gentoo  PYTHON_TARGETS="python2_7 python3_4 (-pypy) (-pypy3) -python3_3 (-python3_5)" 360 KiB
+[ebuild  N     ]    dev-python/setuptools-18.4::gentoo  USE="{-test}" PYTHON_TARGETS="python2_7 python3_4 (-pypy) (-pypy3) -python3_3 (-python3_5)" 
+612 KiB
+[nomerge       ] net-firewall/iptables-1.4.21-r1::gentoo  USE="ipv6 -conntrack% -netlink -static-libs" 
+[nomerge       ]  virtual/pkgconfig-0-r1::gentoo 
+[nomerge       ]   dev-util/pkgconfig-0.28-r2::gentoo  USE="-hardened -internal-glib" 
+[ebuild     U  ]    dev-libs/glib-2.44.1:2::gentoo [2.42.2:2::gentoo] USE="mime xattr* -dbus -debug (-fam) (-selinux) -static-libs -systemtap {-test} 
+-utils" PYTHON_TARGETS="python2_7" 8,852 KiB
+[nomerge       ] virtual/modutils-0::gentoo 
+[ebuild     U  ]  sys-apps/kmod-21::gentoo [20::gentoo] USE="tools zlib -debug -doc -lzma -python -static-libs" PYTHON_TARGETS="python2_7 python3_4* 
+-python3_3*" 436 KiB
+[nomerge       ] dev-vcs/git-2.4.10::gentoo [2.3.6::gentoo] USE="blksha1 curl gpg iconv nls pcre perl python threads webdav -cgi -cvs -doc -emacs 
+-gnome-keyring -gtk -highlight -mediawiki (-ppcsha1) -subversion {-test} -tk -xinetd" PYTHON_TARGETS="python2_7" 
+[ebuild     U  ]  app-crypt/gnupg-2.0.28::gentoo [2.0.26-r3::gentoo] USE="bzip2 nls readline -doc -ldap -mta (-selinux) -smartcard -static -tools 
+-usb" 4,332 KiB
+[ebuild     U  ]   app-crypt/pinentry-0.9.5::gentoo [0.9.0::gentoo] USE="ncurses -caps -clipboard% -emacs% -gnome-keyring% -gtk -qt4 -static" 503 KiB
+[nomerge       ] dev-python/setuptools-18.4::gentoo  USE="{-test}" PYTHON_TARGETS="python2_7 python3_4 (-pypy) (-pypy3) -python3_3 (-python3_5)" 
+[ebuild  N     ]  dev-python/packaging-15.3-r2::gentoo  USE="{-test}" PYTHON_TARGETS="python2_7 python3_4 (-pypy) (-pypy3) -python3_3 (-python3_5)" 34 
+KiB
+[ebuild  rR    ] dev-libs/libxslt-1.1.28-r4::gentoo  USE="crypt -debug -python -static-libs" PYTHON_TARGETS="python2_7" 3,356 KiB
+[ebuild   R    ]  dev-libs/libxml2-2.9.2-r1:2::gentoo  USE="ipv6 readline -debug -examples -icu -lzma -python -static-libs {-test}" 
+PYTHON_TARGETS="python2_7 python3_4* -python3_3* (-python3_5)" 5,318 KiB
+[nomerge       ] sys-fs/e2fsprogs-1.42.13::gentoo [1.42.12::gentoo] USE="nls -static-libs" 
+[ebuild     U  ]  sys-libs/e2fsprogs-libs-1.42.13::gentoo [1.42.12::gentoo] USE="nls -static-libs" 592 KiB
+[ebuild   R    ] net-misc/rsync-3.1.1::gentoo  USE="acl iconv ipv6 xattr* -static" 870 KiB
+[ebuild     U  ] sys-apps/util-linux-2.26.2::gentoo [2.25.2-r2::gentoo] USE="cramfs ncurses nls pam suid unicode -caps -fdformat -python (-selinux) 
+-slang -static-libs -systemd {-test} -tty-helpers -udev" PYTHON_SINGLE_TARGET="python2_7 -python3_3 -python3_4" PYTHON_TARGETS="python2_7 python3_4* 
+-python3_3*" 3,774 KiB
+[nomerge       ] dev-python/setuptools-18.4::gentoo  USE="{-test}" PYTHON_TARGETS="python2_7 python3_4 (-pypy) (-pypy3) -python3_3 (-python3_5)" 
+[ebuild  NS    ]  dev-lang/python-3.4.3:3.4::gentoo [2.7.9-r1:2.7::gentoo, 3.3.5-r1:3.3::gentoo] USE="gdbm ipv6 ncurses readline ssl threads xml 
+-build -examples -hardened -sqlite -tk -wininst" 14,096 KiB
+[ebuild     U  ]  dev-lang/python-2.7.10:2.7::gentoo [2.7.9-r1:2.7::gentoo] USE="gdbm ipv6 ncurses readline ssl threads (wide-unicode) xml (-berkdb) 
+-build -doc -examples -hardened -sqlite -tk -wininst" 11,977 KiB
+[ebuild     U  ] app-misc/screen-4.3.1-r1::gentoo [4.0.3-r6::gentoo] USE="pam -debug -multiuser -nethack (-selinux)" 827 KiB
+[ebuild     U  ] app-admin/logrotate-3.9.1::gentoo [3.8.9-r1::gentoo] USE="acl cron (-selinux)" 78 KiB
+[ebuild  NS    ] sys-kernel/gentoo-sources-4.1.12:4.1.12::gentoo [4.0.5:4.0.5::gentoo] USE="-build -experimental -kdbus -symlink" 81,470 KiB
+[ebuild     U  ] app-portage/eix-0.30.11::gentoo [0.30.4::gentoo] USE="dep nls -debug -doc -optimization -security -sqlite -strong-optimization 
+-strong-security -swap-remote -tools" LINGUAS="-de -ru" 773 KiB
+[nomerge       ] app-editors/vim-7.4.769::gentoo [7.4.273::gentoo] USE="acl nls -X -cscope -debug -gpm -lua -luajit -minimal -perl -python -racket 
+-ruby (-selinux) -tcl -vim-pager" PYTHON_SINGLE_TARGET="(-python2_7%*) (-python3_3%) (-python3_4%)" PYTHON_TARGETS="python2_7 python3_4* -python3_3*" 
+[nomerge       ]  app-editors/vim-core-7.4.769::gentoo [7.4.273::gentoo] USE="acl nls -minimal" 
+[ebuild     U  ]   app-vim/gentoo-syntax-20150823::gentoo [20130619::gentoo] USE="-ignore-glep31" 26 KiB
+[nomerge       ] virtual/shadow-0::gentoo 
+[ebuild   R    ]  sys-apps/shadow-4.1.5.1-r1::gentoo  USE="acl cracklib nls pam xattr* -audit (-selinux) -skey" 2,142 KiB
+[ebuild  NS    ] sys-devel/gcc-4.9.3:4.9::gentoo [4.8.4:4.8::gentoo] USE="cxx fortran nls nptl openmp sanitize (-altivec) (-awt) -cilk -debug -doc 
+(-fixed-point) -gcj -go -graphite (-hardened) (-libssp) (-multilib) (-multislot) -nopie -nossp -objc -objc++ -objc-gc -regression-test -vanilla" 
+87,940 KiB
+[nomerge       ] app-admin/syslog-ng-3.7.1::gentoo [3.6.2::gentoo] USE="ipv6 tcpd -amqp -caps -dbi -geoip -json -mongodb -pacct -python% -redis -smtp 
+-spoof-source -systemd (-ssl%*)" 
+[nomerge       ]  dev-libs/glib-2.44.1:2::gentoo [2.42.2:2::gentoo] USE="mime xattr* -dbus -debug (-fam) (-selinux) -static-libs -systemtap {-test} 
+-utils" PYTHON_TARGETS="python2_7" 
+[ebuild     U  ]   dev-libs/elfutils-0.163::gentoo [0.158::gentoo] USE="bzip2 nls utils zlib -lzma -static-libs {-test} (-threads)" 5,960 KiB
+[nomerge       ] sys-fs/lvm2-2.02.116::gentoo [2.02.109::gentoo] USE="readline thin udev (-clvm) (-cman) -device-mapper-only -lvm1 -lvm2create_initrd 
+(-selinux) -static -static-libs -systemd" 
+[ebuild     U  ]  sys-block/thin-provisioning-tools-0.4.1::gentoo [0.3.2-r1::gentoo] USE="{-test}" 183 KiB
+[ebuild  r  U  ] dev-libs/libgcrypt-1.6.3-r4:0/20::gentoo [1.5.4-r1:0/11::gentoo] USE="threads%* -doc% -static-libs" 2,436 KiB
+[nomerge       ] sys-apps/busybox-1.23.1-r1::gentoo  USE="ipv6 pam static -debug -livecd -make-symlinks -math -mdev -savedconfig (-selinux) -sep-usr 
+-syslog -systemd" 
+[ebuild     U  ]  sys-libs/pam-1.2.1::gentoo [1.1.8-r2::gentoo] USE="berkdb cracklib nls pie%* -audit -debug -nis (-selinux) {-test} -vim-syntax" 
+1,729 KiB
+[nomerge       ] app-admin/syslog-ng-3.7.1::gentoo [3.6.2::gentoo] USE="ipv6 tcpd -amqp -caps -dbi -geoip -json -mongodb -pacct -python% -redis -smtp 
+-spoof-source -systemd (-ssl%*)" 
+[ebuild  NS    ]  sys-devel/automake-1.15:1.15::gentoo [1.14.1:1.14::gentoo] 1,462 KiB
+[ebuild   R    ]   sys-apps/help2man-1.46.6::gentoo  USE="nls" ELIBC="(-glibc%*)" 168 KiB
+[ebuild     U  ] app-editors/vim-7.4.769::gentoo [7.4.273::gentoo] USE="acl nls -X -cscope -debug -gpm -lua -luajit -minimal -perl -python -racket 
+-ruby (-selinux) -tcl -vim-pager" PYTHON_SINGLE_TARGET="(-python2_7%*) (-python3_3%) (-python3_4%)" PYTHON_TARGETS="python2_7 python3_4* -python3_3*" 
+11,908 KiB
+[nomerge       ] app-crypt/gnupg-2.0.28::gentoo [2.0.26-r3::gentoo] USE="bzip2 nls readline -doc -ldap -mta (-selinux) -smartcard -static -tools -usb" 
+[ebuild     U  ]  dev-libs/libassuan-2.2.1::gentoo [2.1.1::gentoo] USE="-static-libs" 530 KiB
+[ebuild     U  ]   dev-libs/libgpg-error-1.19::gentoo [1.13::gentoo] USE="nls -common-lisp -static-libs" 744 KiB
+[ebuild   R    ] sys-devel/patch-2.7.5::gentoo  USE="xattr* -static {-test}" 711 KiB
+[ebuild   R    ] app-arch/tar-1.27.1-r2::gentoo  USE="acl nls xattr* -minimal (-selinux) -static" 2,513 KiB
+[ebuild     U  ] sys-apps/coreutils-8.23::gentoo [8.21::gentoo] USE="acl nls xattr* -caps -gmp -multicall% (-selinux) -static -vanilla" 5,298 KiB
+[ebuild     U  ] sys-devel/binutils-2.25.1-r1::gentoo [2.24-r3::gentoo] USE="cxx nls zlib (-multislot) -multitarget -static-libs {-test} -vanilla" 
+23,616 KiB
+[nomerge       ] sys-apps/man-pages-4.00::gentoo [3.83::gentoo] USE="nls" LINGUAS="-da -de -fr -it -ja -nl -pl -ro -ru -zh_CN" 
+[blocks b      ]  <sys-apps/attr-2.4.47-r2 ("<sys-apps/attr-2.4.47-r2" is blocking sys-apps/man-pages-4.00)
+[ebuild     U  ]   sys-apps/attr-2.4.47-r2::gentoo [2.4.47-r1::gentoo] USE="nls -static-libs" 336 KiB
+[ebuild     U  ] sys-apps/man-pages-4.00::gentoo [3.83::gentoo] USE="nls" LINGUAS="-da -de -fr -it -ja -nl -pl -ro -ru -zh_CN" 1,342 KiB
+[nomerge       ] app-crypt/pinentry-0.9.5::gentoo [0.9.0::gentoo] USE="ncurses -caps -clipboard% -emacs% -gnome-keyring% -gtk -qt4 -static" 
+[ebuild     U  ]  app-eselect/eselect-pinentry-0.6::gentoo [0.4::gentoo] 0 KiB
+[ebuild     U  ] app-admin/sudo-1.8.15-r1::gentoo [1.8.12::gentoo] USE="nls pam sendmail -ldap -offensive (-selinux) -skey" 2,598 KiB
+[nomerge       ] app-admin/logrotate-3.9.1::gentoo [3.8.9-r1::gentoo] USE="acl cron (-selinux)" 
+[ebuild     U  ]  virtual/cron-0-r1::gentoo [0::gentoo] 0 KiB
+[ebuild     U  ] app-editors/vim-core-7.4.769::gentoo [7.4.273::gentoo] USE="acl nls -minimal" 0 KiB
+[nomerge       ] dev-vcs/git-2.4.10::gentoo [2.3.6::gentoo] USE="blksha1 curl gpg iconv nls pcre perl python threads webdav -cgi -cvs -doc -emacs 
+-gnome-keyring -gtk -highlight -mediawiki (-ppcsha1) -subversion {-test} -tk -xinetd" PYTHON_TARGETS="python2_7" 
+[nomerge       ]  dev-perl/Net-SMTP-SSL-1.10.0-r1::gentoo 
+[nomerge       ]   dev-perl/IO-Socket-SSL-1.967.0::gentoo  USE="-idn" 
+[ebuild     U  ]    dev-perl/Net-SSLeay-1.650.0-r1::gentoo [1.650.0::gentoo] 376 KiB
+[ebuild     U  ]     dev-libs/openssl-1.0.2d::gentoo [1.0.1o::gentoo] USE="asm%* tls-heartbeat zlib -bindist -gmp -kerberos -rfc3779 -sctp% 
+-static-libs {-test} -vanilla" CPU_FLAGS_X86="(sse2)" 5,176 KiB
+[nomerge       ] sys-apps/openrc-0.17::gentoo  USE="ncurses netifrc pam unicode -audit -debug -newnet (-prefix) (-selinux) -static-libs -tools" 
+[nomerge       ]  sys-libs/glibc-2.21-r1:2.2::gentoo [2.20-r2:2.2::gentoo] USE="-debug -gd (-hardened) (-multilib) -nscd -profile (-selinux) -suid 
+-systemtap -vanilla" 
+[ebuild     U  ]   sys-libs/timezone-data-2015f::gentoo [2015b::gentoo] USE="nls -leaps_timezone% (-right_timezone%)" 469 KiB
+[nomerge       ] sys-block/thin-provisioning-tools-0.4.1::gentoo [0.3.2-r1::gentoo] USE="{-test}" 
+[ebuild     U  ]  dev-libs/boost-1.56.0-r1:0/1.56.0::gentoo [1.55.0-r2:0/1.55.0::gentoo] USE="nls threads -context -debug -doc -icu -mpi -python 
+-static-libs -tools" PYTHON_TARGETS="python2_7 python3_4* -python3_3*" 92,557 KiB
+[ebuild     U  ]   dev-util/boost-build-1.56.0::gentoo [1.55.0::gentoo] USE="-examples -python {-test}" PYTHON_TARGETS="python2_7%*" 0 KiB
+[ebuild  N     ]  dev-libs/libaio-0.3.110::gentoo  USE="-static-libs {-test}" 42 KiB
+[nomerge       ] sys-kernel/gentoo-sources-4.1.12:4.1.12::gentoo [4.0.5:4.0.5::gentoo] USE="-build -experimental -kdbus -symlink" 
+[ebuild     U  ]  sys-devel/bc-1.06.95-r1::gentoo [1.06.95::gentoo] USE="readline -libedit -static" 284 KiB
+[ebuild     U  ] app-shells/bash-4.3_p39::gentoo [4.3_p33-r2::gentoo] USE="net nls (readline) -afs -bashlogger -examples -mem-scramble -plugins 
+-vanilla" 7,990 KiB
+[nomerge       ] sys-devel/gcc-4.9.3:4.9::gentoo [4.8.4:4.8::gentoo] USE="cxx fortran nls nptl openmp sanitize (-altivec) (-awt) -cilk -debug -doc 
+(-fixed-point) -gcj -go -graphite (-hardened) (-libssp) (-multilib) (-multislot) -nopie -nossp -objc -objc++ -objc-gc -regression-test -vanilla" 
+[ebuild     U  ]  dev-libs/mpfr-3.1.3_p4::gentoo [3.1.2_p10::gentoo] USE="-static-libs" 1,087 KiB
+[ebuild     U  ]   dev-libs/gmp-6.0.0a::gentoo [5.1.3-r1::gentoo] USE="cxx -doc -pgo -static-libs" 1,860 KiB
+[nomerge       ] sys-apps/man-db-2.7.2::gentoo [2.6.6::gentoo] USE="berkdb gdbm nls zlib (-selinux) -static-libs" 
+[nomerge       ]  app-text/po4a-0.45-r1::gentoo  USE="{-test}" 
+[nomerge       ]   dev-perl/Text-WrapI18N-0.60.0-r1::gentoo 
+[nomerge       ]    dev-lang/perl-5.20.2:0/5.20::gentoo  USE="berkdb gdbm -debug -doc -ithreads" 
+[nomerge       ]     app-admin/perl-cleaner-2.19::gentoo 
+[nomerge       ]      sys-apps/portage-2.2.20.1::gentoo [2.2.18::gentoo] USE="(ipc) xattr* -build -doc -epydoc (-selinux)" LINGUAS="-ru" 
+PYTHON_TARGETS="python2_7 python3_4* (-pypy) -python3_3*" 
+[ebuild  N     ]       sys-apps/install-xattr-0.5::gentoo  16 KiB
+[ebuild   R    ] sys-apps/file-5.22::gentoo  USE="zlib -python -static-libs" PYTHON_TARGETS="python2_7 python3_4* -python3_3*" 716 KiB
+[nomerge       ] virtual/libc-0::gentoo 
+[nomerge       ]  sys-libs/glibc-2.21-r1:2.2::gentoo [2.20-r2:2.2::gentoo] USE="-debug -gd (-hardened) (-multilib) -nscd -profile (-selinux) -suid 
+-systemtap -vanilla" 
+[ebuild     U  ]   sys-apps/gentoo-functions-0.10::gentoo [0.8::gentoo] 12 KiB
+[nomerge       ] sys-apps/less-478::gentoo  USE="pcre unicode" 
+[ebuild  NS    ]  sys-libs/ncurses-5.9-r99:5::gentoo [5.9-r3:0::gentoo] USE="cxx unicode -ada -gpm -static-libs -tinfo" 0 KiB
+[ebuild     U  ]   sys-libs/ncurses-5.9-r5:0/5::gentoo [5.9-r3:0/0::gentoo] USE="cxx unicode -ada -debug -doc -gpm -minimal -profile -static-libs 
+-tinfo -trace" 2,761 KiB
+[nomerge       ] sys-apps/help2man-1.46.6::gentoo  USE="nls" ELIBC="(-glibc%*)" 
+[nomerge       ]  dev-perl/Locale-gettext-1.50.0-r1::gentoo 
+[nomerge       ]   sys-devel/gettext-0.19.4::gentoo  USE="acl cxx ncurses nls openmp -cvs -doc -emacs -git -java -static-libs" 
+[ebuild     U  ]    dev-libs/expat-2.1.0-r5::gentoo [2.1.0-r4::gentoo] USE="unicode -examples -static-libs" 550 KiB
+[ebuild     U  ] sys-devel/gnuconfig-20150308::gentoo [20150304::gentoo] 46 KiB
+[nomerge       ] dev-python/setuptools-18.4::gentoo  USE="{-test}" PYTHON_TARGETS="python2_7 python3_4 (-pypy) (-pypy3) -python3_3 (-python3_5)" 
+[ebuild   R    ]  dev-lang/python-exec-2.0.1-r1:2::gentoo  PYTHON_TARGETS="(jython2_5) (jython2_7) (pypy) (pypy3) (python2_7) (python3_3) (python3_4) 
+(python3_5%*)" 80 KiB
+[nomerge       ] sys-apps/shadow-4.1.5.1-r1::gentoo  USE="acl cracklib nls pam xattr* -audit (-selinux) -skey" 
+[ebuild     U  ]  virtual/libintl-0-r2::gentoo [0-r1::gentoo] 0 KiB
+[nomerge       ] sys-devel/gcc-4.9.3:4.9::gentoo [4.8.4:4.8::gentoo] USE="cxx fortran nls nptl openmp sanitize (-altivec) (-awt) -cilk -debug -doc 
+(-fixed-point) -gcj -go -graphite (-hardened) (-libssp) (-multilib) (-multislot) -nopie -nossp -objc -objc++ -objc-gc -regression-test -vanilla" 
+[ebuild     U  ]  sys-libs/glibc-2.21-r1:2.2::gentoo [2.20-r2:2.2::gentoo] USE="-debug -gd (-hardened) (-multilib) -nscd -profile (-selinux) -suid 
+-systemtap -vanilla" 12,067 KiB
+
+Total: 72 packages (50 upgrades, 6 new, 5 in new slots, 11 reinstalls), Size of downloads: 441,180 KiB
+Conflict: 1 block
+
+The following packages are causing rebuilds:
+
+  (dev-libs/libgcrypt-1.6.3-r4:0/20::gentoo, ebuild scheduled for merge) causes rebuilds for:
+    (dev-libs/libxslt-1.1.28-r4:0/0::gentoo, ebuild scheduled for merge)
+
+
+
+
+
+
+
+</pre>
