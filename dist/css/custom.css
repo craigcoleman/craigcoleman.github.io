@@ -9,11 +9,18 @@
 .nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover
 {color:#203731;background-color:#ffb612;
 }
+body{
+font-family: system-ui, sans-serif;
+
+
+}
+
 pre{
 padding: 10px;
 
 }
 a {
+    font-family: system-ui, sans-serif;
     color: #203731;
     background-color: #FFB612;
     text-decoration: none;
