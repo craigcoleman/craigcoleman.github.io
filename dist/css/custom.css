@@ -1,5 +1,3 @@
-
-
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     color: #203731;
     background-color: #FFB612;
@@ -11,16 +9,19 @@
 .nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover
 {color:#203731;background-color:#ffb612;
 }
+pre{
+padding: 10px;
 
+}
 a {
     color: #203731;
     background-color: #FFB612;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
 }
 a:hover{
 color: #000;
-    background-color: #FFB612;
+    background-color: #fff;
     text-decoration: none;
 
 }
